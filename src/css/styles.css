@@ -1,25 +1,47 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+/* Base styles */
+* {
+  box-sizing: border-box;
+}
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+body {
+  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+.timer-btn,
+.snackbar-btn,
+.back-btn {
+  height: 40px;
+  width: 100px;
+  margin: 5px;
+  padding: 8px 16px;
+  font-weight: 500;
+  color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timer-btn:hover,
+.snackbar-btn:hover,
+.back-btn:hover {
+  border: 2px solid #4e75ff;
+}
+
+.timer-btn:focus,
+.snackbar-btn:focus,
+.back-btn:focus {
+  color: #fafafa;
+  background-color: #4e75ff;
 }
