@@ -4,46 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
+    <title>SNACKBAR</title>
+
     
-    
-    
-    <title>Snackbar</title>
-    <script type="module" crossorigin src="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/2-snackbar-74e4e085.css">
-    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-eddcb6d1.css">
+    <script type="module" crossorigin src="/goit-js-hw-10/commonHelpers2.js"></script>
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-3cfb730f.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/vendor-7a007824.css">
+    <link rel="stylesheet" href="/goit-js-hw-10/assets/styles-e2d8c67d.css">
   </head>
   <body>
-    <section>
-      <a href="./index.html">
-        <button class="back-btn" type="button">Go back</button>
-      </a>
+    <section class="section">
+      <a class="link-main" href="./index.html">Go to home</a>
+      
     </section>
+
+    
     <form class="form">
-      <label>
-        Delay (ms)
-        <input type="number" name="delay" required />
-      </label>
-
-      <fieldset>
-        <legend>State</legend>
-        <label>
-          <input type="radio" name="state" value="fulfilled" required />
-          Fulfilled
+      <div class="delay-input-div">
+        <label class="delay-label">
+          Delay (ms)
+          <input class="delay-input" type="number" name="delay" required />
         </label>
-        <label>
-          <input type="radio" name="state" value="rejected" required />
-          Rejected
-        </label>
-      </fieldset>
+      </div>
+    
+      <div class="state-div">
+        <fieldset>
+          <legend>State</legend>
 
-      <button type="submit">Create notification</button>
+          <div class="state-label-div">
+            <label class="form-label">
+              <input type="radio" name="state" value="fulfilled" required />
+              Fulfilled
+            </label>
+          </div>
+          <div class="delay-label-div">
+            <label class="form-label">
+              <input type="radio" name="state" value="rejected" required />
+              Rejected
+            </label>
+          </div>
+        </fieldset>
+      </div>
+    
+      <button class="delay-btn" type="submit">Create notification</button>
     </form>
+    
+
 
     
   </body>
