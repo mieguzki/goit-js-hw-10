@@ -32,7 +32,7 @@ flatpickr('#datetime-picker', {
       elements.startButton.disabled = true;
       iziToast.show({
         title: 'Error',
-        message: 'Illegal options',
+        message: 'Please choose a date in the future',
         position: 'topRight',
         backgroundColor: '#ef4040',
         messageColor: '#fff',
