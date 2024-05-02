@@ -7,7 +7,6 @@ form.addEventListener('submit', onSubmit);
 
 function onSubmit(event) {
   event.preventDefault();
-
   const formData = new FormData(form);
   const delay = formData.get('delay');
   const state = formData.get('state');
